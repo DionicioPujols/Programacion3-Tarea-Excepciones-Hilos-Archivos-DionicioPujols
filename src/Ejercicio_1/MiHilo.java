@@ -1,26 +1,24 @@
 public class MiHilo extends Thread{
-    public MiHilo(){
+    private String Archivo;
+    
+    public MiHilo(String Archivo){
+        this.Archivo = Archivo;
     }
 
     @Override
     public void run(){
-        System.out.println("Descargando archivo1...");
-        System.out.println("Descargando archivo2...");
-        System.out.println("Descargando archivo3...");
+        
+        System.out.println("Descargando " + Archivo + "...");
 
         for(int i = 10; i <= 100; i+=10){
-            System.out.println("Archivo1: " + i + "%");
-            System.out.println("Archivo2: " + i + "%");
-            System.out.println("Archivo3: " + i + "%");
+            System.out.println(Archivo + ": " + i + "%");
             try{
                 Thread.sleep(2000);
             } catch(InterruptedException e){
                 e.printStackTrace();
             }
         }
-        System.out.println("Archivo1 completado.");
-        System.out.println("Archivo2 completado.");
-        System.out.println("Archivo3 completado.");
+        System.out.println(Archivo + " completado.");
 
     }
 } 
