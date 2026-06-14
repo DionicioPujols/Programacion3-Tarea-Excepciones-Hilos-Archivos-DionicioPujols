@@ -25,7 +25,8 @@ public class Main {
                         double num1 = sc.nextDouble();
                         System.out.print("Ingrese el segundo numero: ");
                         double num2 = sc.nextDouble();
-                        calc.Suma(num1, num2);
+                        double suma = calc.Suma(num1, num2);
+                        System.out.println("La suma es: " + suma);
                         break;
 
                     case 2:
@@ -33,7 +34,8 @@ public class Main {
                         double num3 = sc.nextDouble();
                         System.out.print("Ingrese el segundo numero: ");
                         double num4 = sc.nextDouble();
-                        calc.Resta(num3, num4);
+                        double resta = calc.Resta(num3, num4);
+                        System.out.println("La suma es: " + resta);
                         break;
 
                     case 3:
@@ -41,7 +43,8 @@ public class Main {
                         double num5 = sc.nextDouble();
                         System.out.print("Ingrese el segundo numero: ");
                         double num6 = sc.nextDouble();
-                        calc.multiplicacion(num5, num6);
+                        double multi = calc.multiplicacion(num5, num6);
+                        System.out.println("La resta es: " + multi);
                         break;
 
                     case 4:
@@ -49,7 +52,8 @@ public class Main {
                         double num7 = sc.nextDouble();
                         System.out.print("Ingrese el segundo numero: ");
                         double num8 = sc.nextDouble();
-                        calc.division(num7, num8);
+                        double div = calc.division(num7, num8);
+                        System.out.println("La Multiplicacion es: " + div);
                         break;
 
                     case 5:

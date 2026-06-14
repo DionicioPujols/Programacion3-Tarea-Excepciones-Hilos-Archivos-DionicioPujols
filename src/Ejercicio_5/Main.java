@@ -9,7 +9,7 @@ public class Main {
         int opciones = 0;
         do { 
 
-                System.out.println("|| ----------------------------------------- ||");
+                System.out.println("\n|| ----------------------------------------- ||");
                 System.out.println("||    Sistemas para registrar actividades    ||");
                 System.out.println("|| 1. Agregar actividades                    ||");
                 System.out.println("|| 2. Mostrar actividades                    ||");
@@ -34,7 +34,7 @@ public class Main {
                         System.out.println("Opcion no valida. ");
                 }
         } while(opciones != 3);
-        System.out.println("Nombre del archivo: " + archivo.getName());
+        System.out.println("\nNombre del archivo: " + archivo.getName());
         System.out.println("Ruta del archivo: " + archivo.getAbsolutePath());
         System.out.println("El archivo existe: " + archivo.exists());
     }
